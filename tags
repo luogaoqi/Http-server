@@ -1,0 +1,73 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+FCFS	head.h	/^#define FCFS /;"	d
+FCFS_scheduler	main.cpp	/^void* FCFS_scheduler(void* ptr){$/;"	f
+GET	head.h	/^#define GET /;"	d
+HEAD	head.h	/^#define HEAD /;"	d
+Request	head.h	/^struct Request{$/;"	s
+SJF	head.h	/^#define SJF /;"	d
+SJF_scheduler	main.cpp	/^void* SJF_scheduler(void* ptr){$/;"	f
+Time	options.cpp	/^char* Time(){$/;"	f
+analyseUrl	main.cpp	/^void analyseUrl(char* url,char* serverDir,struct Request* r){$/;"	f
+analyseUrl	server.cpp	/^void analyseUrl(char* url,char* serverDir,struct Request* r){$/;"	f
+asgn_time	head.h	/^	char* asgn_time;    $/;"	m	struct:Request
+client_socket	head.h	/^    int client_socket;$/;"	m	struct:Request
+contentLength	head.h	/^    int contentLength;\/\/the length of requested file, 0  for HEAD, -1 for invalid request, others for GET.$/;"	m	struct:Request
+contentType	head.h	/^    char* contentType;\/\/text\/html or image\/gif$/;"	m	struct:Request
+cv	main.cpp	/^pthread_cond_t cv;$/;"	v
+cv	server.cpp	/^pthread_cond_t cv;$/;"	v
+debug	main.cpp	/^int debug=0;$/;"	v
+debug	server.cpp	/^int debug=0;$/;"	v
+exec_thread	head.h	/^struct exec_thread{$/;"	s
+generateIndex	options.cpp	/^char* generateIndex(struct Request* r){$/;"	f
+getHelpInfo	options.cpp	/^void getHelpInfo(){$/;"	f
+getResponseHead	options.cpp	/^void getResponseHead(struct Request* q,string &response){$/;"	f
+http_analyzer	main.cpp	/^struct Request* http_analyzer(char* p){$/;"	f
+http_analyzer	server.cpp	/^struct Request* http_analyzer(char* p){$/;"	f
+ip	head.h	/^	char* ip;$/;"	m	struct:Request
+isDir	head.h	/^    int isDir;\/\/ 1  for directory,0  for file, -1 for invalid URL$/;"	m	struct:Request
+isFree	head.h	/^    int isFree;\/\/flag$/;"	m	struct:exec_thread
+lastmodifyTime	options.cpp	/^char* lastmodifyTime(const char* dir ){$/;"	f
+lock	main.cpp	/^pthread_mutex_t lock;$/;"	v
+lock	server.cpp	/^pthread_mutex_t lock;$/;"	v
+logFile	main.cpp	/^char* logFile=NULL;$/;"	v
+logFile	server.cpp	/^char* logFile=NULL;$/;"	v
+logging	options.cpp	/^void logging(struct Request* r,int debug,char* logDir){$/;"	f
+main	main.cpp	/^int main(int argc,char** argv){$/;"	f
+main	server.cpp	/^int main(int argc,char** argv){$/;"	f
+port	main.cpp	/^int port=8080;\/\/default port$/;"	v
+port	server.cpp	/^int port=8080;\/\/default port$/;"	v
+queue_lock	main.cpp	/^pthread_mutex_t queue_lock;\/\/for request ready queue$/;"	v
+queue_lock	server.cpp	/^pthread_mutex_t queue_lock;\/\/for request ready queue$/;"	v
+recv_time	head.h	/^	char* recv_time;     $/;"	m	struct:Request
+req	head.h	/^    struct Request* req;\/\/present request$/;"	m	struct:exec_thread	typeref:struct:exec_thread::Request
+reqQueue	main.cpp	/^vector<Request*> reqQueue;$/;"	v
+reqQueue	server.cpp	/^vector<Request*> reqQueue;$/;"	v
+req_head	head.h	/^	char* req_head;$/;"	m	struct:Request
+requestDir	head.h	/^    const char* requestDir;$/;"	m	struct:Request
+requestType	head.h	/^	int requestType;$/;"	m	struct:Request
+run	main.cpp	/^void* run(void* id){$/;"	f
+run	server.cpp	/^void* run(void* id){$/;"	f
+s_queue	main.cpp	/^sem_t s_queue;\/\/for scheduler start$/;"	v
+s_queue	server.cpp	/^sem_t s_queue;\/\/for scheduler start$/;"	v
+s_threads	main.cpp	/^sem_t s_threads;\/\/for scheduler to choose exec_thread$/;"	v
+s_threads	server.cpp	/^sem_t s_threads;\/\/for scheduler to choose exec_thread$/;"	v
+sched	main.cpp	/^int sched=FCFS;\/\/default scheduler$/;"	v
+sched	server.cpp	/^int sched=FCFS;\/\/default scheduler$/;"	v
+scheduler	main.cpp	/^pthread_t scheduler;$/;"	v
+scheduler	server.cpp	/^pthread_t scheduler;$/;"	v
+sem	head.h	/^    sem_t *sem;\/\/semophore$/;"	m	struct:exec_thread
+serverDir	main.cpp	/^char* serverDir=NULL;$/;"	v
+serverDir	server.cpp	/^char* serverDir=NULL;$/;"	v
+sleep_time	main.cpp	/^int sleep_time=5; \/\/scheduler sleep time$/;"	v
+sleep_time	server.cpp	/^int sleep_time=5; \/\/scheduler sleep time$/;"	v
+status	head.h	/^	int status;  	$/;"	m	struct:Request
+thread	head.h	/^    pthread_t thread;\/\/thread id$/;"	m	struct:exec_thread
+thread_num	main.cpp	/^int thread_num=4;\/\/default thread_num in the thread_pool$/;"	v
+thread_num	server.cpp	/^int thread_num=4;\/\/default thread_num in the thread_pool$/;"	v
+threadpool	main.cpp	/^struct exec_thread* threadpool;$/;"	v	typeref:struct:exec_thread
+threadpool	server.cpp	/^struct exec_thread* threadpool;$/;"	v	typeref:struct:exec_thread

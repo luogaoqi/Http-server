@@ -1,0 +1,5 @@
+1.Type "make" to compile all the source files.
+2.Type "./myhttpd [-options]..." to start the server.
+3. Using web browser to access the server,firefox is recommanded.
+4.All the functions according to the project specification are implemented. 
+5.There may be some bugs I hadn't discovered yet.
